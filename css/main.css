@@ -6,6 +6,7 @@
 body {
   color: rgb(188, 199, 203);
   background: rgb(55, 66, 76);
+  margin: 0;
 }
 
 #inputValue {
