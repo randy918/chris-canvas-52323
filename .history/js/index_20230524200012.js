@@ -60,7 +60,6 @@ const main = function () {
 	//!  10123.161 0  main body
 
 	//line
-	c.strokeStyle = "#fa343a";
 	c_Circle(defaultX, defaultY, 60, 60);
 	c_Square(defaultX, defaultY, 60, 60);
 };

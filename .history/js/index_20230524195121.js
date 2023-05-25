@@ -53,14 +53,19 @@ const main = function () {
 		defaultHeight
 	) {
 		c.beginPath();
-		c.fillRect(defaultX - size / 2, defaultY - size / 2, size, size)
+		c.lineTo(,);
 		c.stroke();
 	};
 
 	//!  10123.161 0  main body
+	c.fillRect(200, 200, 44, 233);
 
 	//line
+	c.beginPath();
+	c.moveTo(50, 300);
+	c.lineTo(100, 300);
 	c.strokeStyle = "#fa343a";
+	c.stroke();
 	c_Circle(defaultX, defaultY, 60, 60);
 	c_Square(defaultX, defaultY, 60, 60);
 };

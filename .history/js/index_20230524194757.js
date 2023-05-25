@@ -19,6 +19,8 @@ const main = function () {
 
 	let defaultX = canvas.width / 2;
 	let defaultY = canvas.height / 2;
+	const DEFAULTX = 200;
+	const DEFAULTY = 200;
 	const DEFAULTWIDTH = 200;
 	const DEFAULTHEIGHT = 200;
 	const DEFAULTSTROKEWIDTH = 6;
@@ -53,14 +55,19 @@ const main = function () {
 		defaultHeight
 	) {
 		c.beginPath();
-		c.fillRect(defaultX - size / 2, defaultY - size / 2, size, size)
+		c.arc(defaultX, defaultY, size, 0, 2 * Math.PI);
 		c.stroke();
 	};
 
 	//!  10123.161 0  main body
+	c.fillRect(200, 200, 44, 233);
 
 	//line
+	c.beginPath();
+	c.moveTo(50, 300);
+	c.lineTo(100, 300);
 	c.strokeStyle = "#fa343a";
+	c.stroke();
 	c_Circle(defaultX, defaultY, 60, 60);
 	c_Square(defaultX, defaultY, 60, 60);
 };
