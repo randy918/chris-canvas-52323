@@ -23,7 +23,10 @@ const main = function () {
 	const DEFAULTHEIGHT = 200;
 	const DEFAULTSTROKEWIDTH = 6;
 
-	
+	console.log(
+		"🚀 ~ file: index.js:29 ~ main ~ defaultY:",
+		defaultY
+	);
 	let defaultWidth = DEFAULTWIDTH;
 	let defaultHeight = DEFAULTHEIGHT;
 	let defaultStrokeWidth = DEFAULTSTROKEWIDTH;
@@ -47,6 +50,7 @@ const main = function () {
 		defaultX,
 		defaultY,
 		size,
+		defaultHeight
 	) {
 		c.beginPath();
 		c.fillRect(
@@ -58,7 +62,7 @@ const main = function () {
 		c.stroke();
 	};
 
-	const c_Stroke = function (color, size) {
+	const c_Stroke = function (color, size, defaultHeight) {
 		c.strokeStyle = "#fa343a";
 		c.lineWidth = size;
 		c.lineCap = "round";
@@ -67,7 +71,7 @@ const main = function () {
 	//!  10123.161 0  main body
 
 	//line
-	c_Stroke("#fa343a", defaultStrokeWidth);
+	c_Stroke("#fa343a", defaultS, 60);
 	c_Circle(defaultX, defaultY, 60, 60);
 	c_Square(defaultX, defaultY, 60, 60);
 };
