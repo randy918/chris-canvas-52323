@@ -56,18 +56,21 @@ const main = function () {
 		c.fillRect(defaultX - size / 2, defaultY - size / 2, size, size)
 		c.stroke();
 	};
-	const c_Stroke = function (
-		color,
+	const c_Str = function (
+		defaultX,
+		defaultY,
 		size,
 		defaultHeight
 	) {
-		c.strokeStyle = "#fa343a";
+		c.beginPath();
+		c.fillRect(defaultX - size / 2, defaultY - size / 2, size, size)
+		c.stroke();
 	};
 
 	//!  10123.161 0  main body
 
 	//line
-	c_Stroke(defaultX, defaultY, 60, 60);
+	c.strokeStyle = "#fa343a";
 	c_Circle(defaultX, defaultY, 60, 60);
 	c_Square(defaultX, defaultY, 60, 60);
 };

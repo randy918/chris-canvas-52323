@@ -61,7 +61,7 @@ const main = function () {
 		size,
 		defaultHeight
 	) {
-		c.strokeStyle = "#fa343a";
+		c.strokeStyle = "green";
 	};
 
 	//!  10123.161 0  main body
