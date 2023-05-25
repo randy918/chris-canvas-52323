@@ -60,7 +60,7 @@ const main = function () {
 
 	const c_Stroke = function (color, size) {
 		c.strokeStyle = "#fa343a";
-		c.lineWidth = defaultStrokeWidth;
+		c.lineWidth = size;
 		c.lineCap = "round";
 	};
 

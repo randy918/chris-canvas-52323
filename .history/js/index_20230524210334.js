@@ -60,14 +60,14 @@ const main = function () {
 
 	const c_Stroke = function (color, size) {
 		c.strokeStyle = "#fa343a";
-		c.lineWidth = defaultStrokeWidth;
+		c.lineWidth = size;
 		c.lineCap = "round";
 	};
 
 	//!  10123.161 0  main body=========================================
 
 	//line
-	c_Stroke("#fa343a");
+	c_Stroke("#fa343a", );
 	c_Circle(defaultX, defaultY, 60);
 	c_Square(defaultX, defaultY, 60);
 };

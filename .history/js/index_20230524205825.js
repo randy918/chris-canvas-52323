@@ -39,7 +39,7 @@ const main = function () {
 		defaultHeight
 	) {
 		c.beginPath();
-		c.arc(defaultX, defaultY, size, -1.45, 1.45 * Math.PI);
+		c.arc(defaultX, defaultY, size, -.15, 1 * Math.PI);
 		c.stroke();
 	};
 
@@ -60,16 +60,16 @@ const main = function () {
 
 	const c_Stroke = function (color, size) {
 		c.strokeStyle = "#fa343a";
-		c.lineWidth = defaultStrokeWidth;
+		c.lineWidth = size;
 		c.lineCap = "round";
 	};
 
 	//!  10123.161 0  main body=========================================
 
 	//line
-	c_Stroke("#fa343a");
-	c_Circle(defaultX, defaultY, 60);
-	c_Square(defaultX, defaultY, 60);
+	c_Stroke("#fa343a", defaultStrokeWidth);
+	c_Circle(defaultX, defaultY, 60, 60);
+	c_Square(defaultX, defaultY, 60, 60);
 };
 
 //!  123122.1839  END
