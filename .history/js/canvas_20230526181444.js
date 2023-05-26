@@ -19,10 +19,9 @@ const main = function () {
 
 	let defaultX = canvas.width / 2;
     let defaultY = canvas.height / 2;
+    
 
-    // dx = velocity x
-    let dx = .05;
-
+    
 	const DEFAULTWIDTH = 200;
 	const DEFAULTHEIGHT = 200;
 	const DEFAULTSTROKEWIDTH = 6;
@@ -42,7 +41,7 @@ const main = function () {
         c.clearRect(0, 0, innerWidth, innerHeight);
 
         c_Circle(defaultX, defaultY, 90);
-        defaultX +=dx;
+        defaultX++
         
 
 	};

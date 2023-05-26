@@ -18,11 +18,7 @@ const main = function () {
 	canvas.height = window.innerHeight;
 
 	let defaultX = canvas.width / 2;
-    let defaultY = canvas.height / 2;
-
-    // dx = velocity x
-    let dx = .05;
-
+	let defaultY = canvas.height / 2;
 	const DEFAULTWIDTH = 200;
 	const DEFAULTHEIGHT = 200;
 	const DEFAULTSTROKEWIDTH = 6;
@@ -38,13 +34,7 @@ const main = function () {
 	//!  10123.1609 LIBRARY
 
 	const c_Animate = function () {
-        requestAnimationFrame(c_Animate);
-        c.clearRect(0, 0, innerWidth, innerHeight);
-
-        c_Circle(defaultX, defaultY, 90);
-        defaultX +=dx;
-        
-
+		requestAnimationFrame(c_Animate);
 	};
 
 	const c_Circle = function (
@@ -77,7 +67,7 @@ const main = function () {
 		c.strokeStyle = color;
 		c.lineWidth = defaultStrokeWidth;
         c.lineCap = "round";
-        
+        c
 	};
 
 	//!  10123.161 0  main body=========================================

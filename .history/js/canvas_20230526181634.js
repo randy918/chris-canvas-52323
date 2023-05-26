@@ -19,9 +19,9 @@ const main = function () {
 
 	let defaultX = canvas.width / 2;
     let defaultY = canvas.height / 2;
+    
+    let dx = 11;
 
-    // dx = velocity x
-    let dx = .05;
 
 	const DEFAULTWIDTH = 200;
 	const DEFAULTHEIGHT = 200;
