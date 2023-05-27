@@ -19,10 +19,10 @@ const main = function () {
 	canvas.height = window.innerHeight;
 
 	// establish center default X Y
-	let centerX = canvas.width / 2;
-	let centerY = canvas.height / 2;
+	let defaultX = canvas.width / 2;
+	let defaultY = canvas.height / 2;
 
-	// dx = velocity x / dy = velocity y defaults
+	// dx = velocity x / dy = velocity y
 	let dx = 0.15;
 	let dy = 0.15;
 
@@ -54,8 +54,7 @@ const main = function () {
 			// draw the actual circle
 			c.beginPath();
 			c.arc(x, y, size, -1.45, 1.49 * Math.PI);
-            c.stroke();
-            
+			c.stroke();
 		};
 	}
 

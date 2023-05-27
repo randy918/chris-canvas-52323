@@ -19,10 +19,10 @@ const main = function () {
 	canvas.height = window.innerHeight;
 
 	// establish center default X Y
-	let centerX = canvas.width / 2;
-	let centerY = canvas.height / 2;
+	let centeX = canvas.width / 2;
+	let centeY = canvas.height / 2;
 
-	// dx = velocity x / dy = velocity y defaults
+	// dx = velocity x / dy = velocity y
 	let dx = 0.15;
 	let dy = 0.15;
 
