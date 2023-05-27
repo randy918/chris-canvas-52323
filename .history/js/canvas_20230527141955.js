@@ -38,7 +38,7 @@ const main = function () {
     let strokeWidth = OBJECTSTROKEWIDTH;
     let objectSize = OBJECTSIZE;
 
-	// get 2d context canvas initialize
+	// get 2d contex
     const c = canvas.getContext("2d");
 
 	//!  10123.1609 functions

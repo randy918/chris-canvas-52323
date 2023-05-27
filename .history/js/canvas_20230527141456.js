@@ -22,24 +22,20 @@ const main = function () {
     let defaultX = canvas.width / 2;
 	let defaultY = canvas.height / 2;
 
-	// dx = velocity x / dy = velocity y
+	// dx / = velocity x
 	let dx = 0.15;
-	let dy = 0.15;
 
-	// fixed initial object values
-    const DEFAULTOBJECTWIDTH = 200;
-	const DEFAULTOBJECTHEIGHT = 200;
-	const DEFAULTOBJECTSTROKEWIDTH = 6;
-	const DEFAULTOBJECTSlZE = 40;
+	const OBJECTWIDTH = 200;
+	const OBJECTHEIGHT = 200;
+	const OBJECTSTROKEWIDTH = 6;
+	const OBJECTSlZE = 40;
 
-	// set default object values
-    let width = OBJECTWIDTH;
-	let height = OBJECTHEIGHT;
-    let strokeWidth = OBJECTSTROKEWIDTH;
+	let defaultWidth = OBJECTWIDTH;
+	let defaultHeight = OBJECTHEIGHT;
+    let defaultStrokeWidth = OBJECTSTROKEWIDTH;
     let objectSize = OBJECTSIZE;
 
-	// get 2d context canvas initialize
-    const c = canvas.getContext("2d");
+	const c = canvas.getContext("2d");
 
 	//!  10123.1609 functions
 

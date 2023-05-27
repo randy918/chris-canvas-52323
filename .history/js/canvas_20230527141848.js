@@ -26,20 +26,18 @@ const main = function () {
 	let dx = 0.15;
 	let dy = 0.15;
 
-	// fixed initial object values
+	
     const DEFAULTOBJECTWIDTH = 200;
 	const DEFAULTOBJECTHEIGHT = 200;
 	const DEFAULTOBJECTSTROKEWIDTH = 6;
 	const DEFAULTOBJECTSlZE = 40;
 
-	// set default object values
-    let width = OBJECTWIDTH;
+	let width = OBJECTWIDTH;
 	let height = OBJECTHEIGHT;
     let strokeWidth = OBJECTSTROKEWIDTH;
     let objectSize = OBJECTSIZE;
 
-	// get 2d context canvas initialize
-    const c = canvas.getContext("2d");
+	const c = canvas.getContext("2d");
 
 	//!  10123.1609 functions
 

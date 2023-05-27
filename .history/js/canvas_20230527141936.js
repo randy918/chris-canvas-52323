@@ -32,14 +32,13 @@ const main = function () {
 	const DEFAULTOBJECTSTROKEWIDTH = 6;
 	const DEFAULTOBJECTSlZE = 40;
 
-	// set default object values
+	// set default object val
     let width = OBJECTWIDTH;
 	let height = OBJECTHEIGHT;
     let strokeWidth = OBJECTSTROKEWIDTH;
     let objectSize = OBJECTSIZE;
 
-	// get 2d context canvas initialize
-    const c = canvas.getContext("2d");
+	const c = canvas.getContext("2d");
 
 	//!  10123.1609 functions
 

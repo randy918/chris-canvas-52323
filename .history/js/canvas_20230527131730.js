@@ -13,33 +13,25 @@ window.onload = function () {
 const main = function () {
 	//!  10123.1609  variables
 
-	// establish canvas width / height
-    const canvas = document.querySelector("canvas");
+	const canvas = document.querySelector("canvas");
 	canvas.width = window.innerWidth;
 	canvas.height = window.innerHeight;
 
-// establish center default X Y
-    let defaultX = canvas.width / 2;
+	let defaultX = canvas.width / 2;
 	let defaultY = canvas.height / 2;
 
-	// dx = velocity x / dy = velocity y
+	// dx = velocity x
 	let dx = 0.15;
-	let dy = 0.15;
 
-	// fixed initial object values
-    const DEFAULTOBJECTWIDTH = 200;
-	const DEFAULTOBJECTHEIGHT = 200;
-	const DEFAULTOBJECTSTROKEWIDTH = 6;
-	const DEFAULTOBJECTSlZE = 40;
+	const DEFAULTWIDTH = 200;
+	const DEFAULTHEIGHT = 200;
+	const DEFAULTSTROKEWIDTH = 6;
 
-	// set default object values
-    let width = OBJECTWIDTH;
-	let height = OBJECTHEIGHT;
-    let strokeWidth = OBJECTSTROKEWIDTH;
-    let objectSize = OBJECTSIZE;
+	let defaultWidth = DEFAULTWIDTH;
+	let defaultHeight = DEFAULTHEIGHT;
+	let defaultStrokeWidth = DEFAULTSTROKEWIDTH;
 
-	// get 2d context canvas initialize
-    const c = canvas.getContext("2d");
+	const c = canvas.getContext("2d");
 
 	//!  10123.1609 functions
 
@@ -51,15 +43,13 @@ const main = function () {
 
         this.draw = function() {
 
-	c.beginPath();
-		c.arc(x, y, size, -1.45, 1.49 * Math.PI);
-		c.stroke();
+
 
         }
     }
 
     const circle = new Circle(200, 200);
-    circle.draw();
+    circle
 
 	const c_Animate = function () {
 		requestAnimationFrame(c_Animate);
