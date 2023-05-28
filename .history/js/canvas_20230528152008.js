@@ -64,11 +64,11 @@ const main = function () {
 		c.fillStyle = color;
 	};
 
-	const c_Square = function (centerX, centerY, size) {
+	const c_Square = function (centerX, defaulY, size) {
 		c.beginPath();
 		c.fillRect(
 			centerX - size / 2,
-			centerY - size / 2,
+			defaultY - size / 2,
 			size,
 			size
 		);

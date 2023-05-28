@@ -13,15 +13,12 @@ window.onload = function () {
 const main = function () {
 	//!  10123.1609  variables
 
-    //* establish 2d canvas
-    const canvas = document.querySelector("canvas");
+	//* const canvas = document.querySelector("canvas");
 	canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-	const c = canvas.getContext("2d");
+	canvas.height = window.innerHeight;
 
-
-	let centerX = canvas.width / 2;
-    let centerY = canvas.height / 2;
+	let defaultX = canvas.width / 2;
+    let defaultY = canvas.height / 2;
 
     // dx = velocity x
     let dx = .05;
@@ -34,6 +31,7 @@ const main = function () {
 	let defaultHeight = DEFAULTHEIGHT;
 	let defaultStrokeWidth = DEFAULTSTROKEWIDTH;
 
+	const c = canvas.getContext("2d");
 
 	//!  10123.1609 functions
 
@@ -43,20 +41,20 @@ const main = function () {
         requestAnimationFrame(c_Animate);
         c.clearRect(0, 0, innerWidth, innerHeight);
 
-        c_Circle(centerX, centerY, 90);
-        centerX +=dx;
+        c_Circle(defaultX, defaultY, 90);
+        defaultX +=dx;
         
 
 	};
 
 	const c_Circle = function (
-		centerX,
-		centerY,
+		defaultX,
+		defaultY,
 		size,
 		defaultHeight
 	) {
 		c.beginPath();
-		c.arc(centerX, centerY, size, -1.45, 1.49 * Math.PI);
+		c.arc(defaultX, defaultY, size, -1.45, 1.49 * Math.PI);
 		c.stroke();
 	};
 
@@ -64,11 +62,11 @@ const main = function () {
 		c.fillStyle = color;
 	};
 
-	const c_Square = function (centerX, centerY, size) {
+	const c_Square = function (defaultX, defaultY, size) {
 		c.beginPath();
 		c.fillRect(
-			centerX - size / 2,
-			centerY - size / 2,
+			defaultX - size / 2,
+			defaultY - size / 2,
 			size,
 			size
 		);
@@ -86,9 +84,9 @@ const main = function () {
 
 	//line
 	c_Stroke("#ed1c2c");
-	c_Circle(centerX, centerY, 90);
+	c_Circle(defaultX, defaultY, 90);
 	c_Fill("#05b500");
-	c_Square(centerX, centerY, 90);
+	c_Square(defaultX, defaultY, 90);
 	c_Animate();
 };
 

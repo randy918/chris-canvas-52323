@@ -56,7 +56,7 @@ const main = function () {
 		defaultHeight
 	) {
 		c.beginPath();
-		c.arc(centerX, centerY, size, -1.45, 1.49 * Math.PI);
+		c.arc(centerX, Y, size, -1.45, 1.49 * Math.PI);
 		c.stroke();
 	};
 
@@ -64,11 +64,11 @@ const main = function () {
 		c.fillStyle = color;
 	};
 
-	const c_Square = function (centerX, centerY, size) {
+	const c_Square = function (centerX, defaultY, size) {
 		c.beginPath();
 		c.fillRect(
 			centerX - size / 2,
-			centerY - size / 2,
+			defaultY - size / 2,
 			size,
 			size
 		);

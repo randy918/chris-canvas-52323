@@ -68,7 +68,7 @@ const main = function () {
 		c.beginPath();
 		c.fillRect(
 			centerX - size / 2,
-			centerY - size / 2,
+			Y - size / 2,
 			size,
 			size
 		);

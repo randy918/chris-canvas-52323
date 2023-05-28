@@ -43,7 +43,7 @@ const main = function () {
         requestAnimationFrame(c_Animate);
         c.clearRect(0, 0, innerWidth, innerHeight);
 
-        c_Circle(centerX, centerY, 90);
+        c_Circle(centerX, Y, 90);
         centerX +=dx;
         
 
@@ -51,12 +51,12 @@ const main = function () {
 
 	const c_Circle = function (
 		centerX,
-		centerY,
+		defaultY,
 		size,
 		defaultHeight
 	) {
 		c.beginPath();
-		c.arc(centerX, centerY, size, -1.45, 1.49 * Math.PI);
+		c.arc(centerX, defaultY, size, -1.45, 1.49 * Math.PI);
 		c.stroke();
 	};
 
@@ -64,11 +64,11 @@ const main = function () {
 		c.fillStyle = color;
 	};
 
-	const c_Square = function (centerX, centerY, size) {
+	const c_Square = function (centerX, defaultY, size) {
 		c.beginPath();
 		c.fillRect(
 			centerX - size / 2,
-			centerY - size / 2,
+			defaultY - size / 2,
 			size,
 			size
 		);
