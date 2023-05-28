@@ -38,7 +38,7 @@ const main = function () {
 
 	//!  10123.1609 functions
 
-	//!  10123.1609 LIBRARY============================================================
+	//!  10123.1609 LIBRARY
 
     const c_Animate = function () {
         c.clearRect(0, 0, innerWidth, innerHeight);
@@ -53,25 +53,17 @@ const main = function () {
 
 	};
 
-	const c_Circle = function (
-		centerX,
-		centerY,
-		size,
-		defaultHeight
-	) {
-        
-		c.beginPath();
-		c.arc(centerX, centerY, size, -1.45, 1.49 * Math.PI);
-		c.stroke();
-	};
+
 
 	const c_Fill = function (color, size) {
 		c.fillStyle = color;
 	};
 
 	
-	//!  10123.161 0  main body=========================================================
+	//!  10123.161 0  main body=========================================
 
+	//line
+	// c_Circle(centerX, centerY, 90);
 	c_Animate();
 };
 

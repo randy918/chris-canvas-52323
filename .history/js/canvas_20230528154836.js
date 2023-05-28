@@ -38,7 +38,7 @@ const main = function () {
 
 	//!  10123.1609 functions
 
-	//!  10123.1609 LIBRARY============================================================
+	//!  10123.1609 LIBRARY
 
     const c_Animate = function () {
         c.clearRect(0, 0, innerWidth, innerHeight);
@@ -70,7 +70,7 @@ const main = function () {
 	};
 
 	
-	//!  10123.161 0  main body=========================================================
+	//!  10123.161 0  main body==========================================
 
 	c_Animate();
 };

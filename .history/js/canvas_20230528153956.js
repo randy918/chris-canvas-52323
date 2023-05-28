@@ -23,9 +23,8 @@ const main = function () {
 	let centerX = canvas.width / 2;
     let centerY = canvas.height / 2;
 
-    //* dx dy = velocity X Y
+    // dx = velocity x
     let dx = .05;
-    let dy = .05;
 
 	const DEFAULTWIDTH = 200;
 	const DEFAULTHEIGHT = 200;
@@ -38,16 +37,16 @@ const main = function () {
 
 	//!  10123.1609 functions
 
-	//!  10123.1609 LIBRARY============================================================
+	//!  10123.1609 LIBRARY
 
     const c_Animate = function () {
-        c.clearRect(0, 0, innerWidth, innerHeight);
-        requestAnimationFrame(c_Animate);
-        c_Circle(centerX, centerY, 90);
         c.strokeStyle = "#ed1c2c";
         c.lineWidth = defaultStrokeWidth;
 		c.lineCap = "round";
-        
+        requestAnimationFrame(c_Animate);
+        c.clearRect(0, 0, innerWidth, innerHeight);
+
+        c_Circle(centerX, centerY, 90);
         centerX +=dx;
         
 
@@ -69,9 +68,32 @@ const main = function () {
 		c.fillStyle = color;
 	};
 
-	
-	//!  10123.161 0  main body=========================================================
+	const c_Square = function (centerX, centerY, size) {
+		c.beginPath();
+		c.fillRect(
+			centerX - size / 2,
+			centerY - size / 2,
+			size,
+			size
+        );
+	c_Fill("#05b500");
+        
+		c.stroke();
+	};
 
+	const c_Stroke = function (color, size) {
+		c.strokeStyle = color;
+		c.lineWidth = defaultStrokeWidth;
+        c.lineCap = "round";
+        
+	};
+
+	//!  10123.161 0  main body=========================================
+
+	//line
+	// c_Circle(centerX, centerY, 90);
+	c_Fill("#05b500");
+	c_Square(centerX, centerY, 90);
 	c_Animate();
 };
 

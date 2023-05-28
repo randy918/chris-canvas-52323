@@ -38,7 +38,7 @@ const main = function () {
 
 	//!  10123.1609 functions
 
-	//!  10123.1609 LIBRARY============================================================
+	//!  10123.1609 LIBRARY=
 
     const c_Animate = function () {
         c.clearRect(0, 0, innerWidth, innerHeight);
