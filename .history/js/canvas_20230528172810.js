@@ -42,17 +42,10 @@ const main = function () {
 	//!  10123.1609 LIBRARY OBJECT ORIENTED ========================================
 
     function Circle() {
-        this.x = x;
-        this.y = y;
-
-        this.draw = function() {
+        this.x = 
 
 
-
-        }
     }
-
-    
     
 	//!  10123.1609 LIBRARY============================================================
 

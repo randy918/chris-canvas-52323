@@ -45,14 +45,8 @@ const main = function () {
         this.x = x;
         this.y = y;
 
-        this.draw = function() {
 
-
-
-        }
     }
-
-    
     
 	//!  10123.1609 LIBRARY============================================================
 

@@ -39,29 +39,14 @@ const main = function () {
 	const STROKEWIDTH = 6;
 	let strokeWidth = STROKEWIDTH;
 
-	//!  10123.1609 LIBRARY OBJECT ORIENTED ========================================
-
-    function Circle() {
-        this.x = x;
-        this.y = y;
-
-        this.draw = function() {
-
-
-
-        }
-    }
-
-    
-    
 	//!  10123.1609 LIBRARY============================================================
 
 	const c_Animate = function () {
 		c.clearRect(0, 0, innerWidth, innerHeight);
 
+        requestAnimationFrame(c_Animate);
         
 		c_Circle(x, y, size);
-        requestAnimationFrame(c_Animate);
 	};
 
 	const c_Circle = function (x, y, size) {

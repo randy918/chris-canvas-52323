@@ -28,8 +28,7 @@ const main = function () {
     let y = centerY;
     
     //* object size x y
-    const SIZE = 30;
-    size = SIZE;
+    const SIZE =  
 
 	//* object dx dy = velocity X Y
 	let dx = 0.05;
@@ -39,40 +38,29 @@ const main = function () {
 	const STROKEWIDTH = 6;
 	let strokeWidth = STROKEWIDTH;
 
-	//!  10123.1609 LIBRARY OBJECT ORIENTED ========================================
-
-    function Circle() {
-        this.x = x;
-        this.y = y;
-
-        this.draw = function() {
-
-
-
-        }
-    }
-
-    
-    
 	//!  10123.1609 LIBRARY============================================================
 
 	const c_Animate = function () {
 		c.clearRect(0, 0, innerWidth, innerHeight);
 
-        
-		c_Circle(x, y, size);
-        requestAnimationFrame(c_Animate);
+		requestAnimationFrame(c_Animate);
+
+		c_Circle(centerX, centerY, 30);
+
+		locationXY()
 	};
 
-	const c_Circle = function (x, y, size) {
+	const c_Circle = function (centerX, centerY, size) {
 		c.strokeStyle = "#ed1c2c";
 		c.lineWidth = strokeWidth;
 		c.lineCap = "round";
-        x += 4;
-        y += dy;
-        c.beginPath();
-		c.arc(x, y, size, -1.45, 1.49 * Math.PI);
+		c.beginPath();
+		c.arc(centerX, centerY, size, -1.45, 1.49 * Math.PI);
 		c.stroke();
+	};
+
+	const c_Fill = function (color, size) {
+		c.fillStyle = color;
 	};
 
 	//!  BODY =========================================================================

@@ -11,46 +11,47 @@ window.onload = function () {
 //!  MAIN================================================================================
 
 const main = function () {
-	//!  10123.1609  variables
+    //!  10123.1609  variables
 
-	//* establish 2d canvas
-	const canvas = document.querySelector("canvas");
-	canvas.width = window.innerWidth;
-	canvas.height = window.innerHeight;
-	const c = canvas.getContext("2d");
+    //* establish 2d canvas
+    const canvas = document.querySelector("canvas");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    const c = canvas.getContext("2d");
 
-	//* center of screen X Y
-	let centerX = canvas.width / 2;
-	let centerY = canvas.height / 2;
+    //* center of screen X Y
+    let centerX = canvas.width / 2;
+    let centerY = canvas.height / 2;
 
-	//* object x y = location X Y
-	let x = centerX;
+    //* object x y = location X Y
+    let x = centerX;
     let y = centerY;
     
     //* object size x y
     const SIZE = 30;
     size = SIZE;
 
-	//* object dx dy = velocity X Y
-	let dx = 0.05;
-	let dy = 0.05;
+    //* object dx dy = velocity X Y
+    let dx = 0.05;
+    let dy = 0.05;
 
-	//* default stroke
-	const STROKEWIDTH = 6;
-	let strokeWidth = STROKEWIDTH;
+    //* default stroke
+    const STROKEWIDTH = 6;
+    let strokeWidth = STROKEWIDTH;
 
-	//!  10123.1609 LIBRARY OBJECT ORIENTED ========================================
+    //!  10123.1609 LIBRARY OBJECT ORIENTED ========================================
 
     function Circle() {
         this.x = x;
         this.y = y;
 
-        this.draw = function() {
+        this.draw = function (
+            
+            {
 
-
-
-        }
+            })
     }
+}
 
     
     

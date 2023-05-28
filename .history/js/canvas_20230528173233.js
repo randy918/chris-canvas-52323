@@ -45,11 +45,11 @@ const main = function () {
         this.x = x;
         this.y = y;
 
-        this.draw = function() {
+        this.draw = function ()
+            
+            {
 
-
-
-        }
+            })
     }
 
     
