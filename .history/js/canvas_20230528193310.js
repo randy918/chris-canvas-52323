@@ -39,14 +39,13 @@ const main = function () {
     const STROKEWIDTH = 6;
     let strokeWidth = STROKEWIDTH;
 
-    //!  LIBRARY OBJECT ORIENTED ========================================
+    //!  10123.1609 LIBRARY OBJECT ORIENTED ========================================
 
-    function Circle(x, y, dx, dy, radius) {
+    function Circle(x, y) {
         this.x = x;
         this.y = y;
         this.dx = dx;
         this.dy = dy;
-        this.radius = radius;
         
         this.draw = function () {
             
@@ -58,23 +57,24 @@ const main = function () {
         };
 
         this.update = function () {
-            if (this.x + radius > innerWidth || this.x - radius < 0) {
-                this.dx = -this.dx;
+            if (.thisx + radius > innerWidth || .thisx - radius < 0) {
+                .thisdx = -.thisdx;
             }
             
-            if (this.y + radius > innerWidth || this.y - radius < 0) {
-                this.dy = -this.dy;
+            if (.thisy + radius > innerWidth || .thisy - radius < 0) {
+                .thisdy = -.thisdy;
             }
-            this.x += this.dx;
-            this.y += this.dy;
+            
         }
     
         let circle = new Circle(200, 200);
 
-    }
+
+        //!  10123.1609 LIBRARY============================================================
 
         //!  BODY =========================================================================
 
- 
+        c_Animate();
+    };
 
 };

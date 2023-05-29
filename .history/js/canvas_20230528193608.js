@@ -41,12 +41,12 @@ const main = function () {
 
     //!  LIBRARY OBJECT ORIENTED ========================================
 
-    function Circle(x, y, dx, dy, radius) {
+    function Circle(x, y) {
         this.x = x;
         this.y = y;
         this.dx = dx;
         this.dy = dy;
-        this.radius = radius;
+        this
         
         this.draw = function () {
             
